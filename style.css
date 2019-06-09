@@ -1,0 +1,216 @@
+/* ==========================================================================
+ Main Elements
+========================================================================== */
+
+/** Sub-section comment block **/
+
+/* ==========================================================================
+ Colors
+========================================================================== */
+
+html {
+	--color-brown: #401c0e;
+	--color-brown-dark: #220000;
+	--color-brown-light: #634434;
+
+	--color-red: #c20a12;
+	--color-red-dark: #890000;
+	--color-red-light: #fd503c;
+
+
+	--color-blue: #00b9ae;
+	--color-blue-dark: #00887f;
+	--color-blue-light: #5dece0;
+
+
+	--color-gold: #e89005;
+	--color-gold-dark: #b06200;
+	--color-gold-light: #ffc046;
+
+
+	--color-beige: #f8eee0;
+	--color-beige-dark: #c5bcae;
+	--color-beige-light: #fff;
+
+	--color-gray: #2c2c2c;
+	--color-gray-dark: #000;
+	--color-gray-light: #555;
+
+	background-color: var(--color-beige);
+	color: var(--color-brown-dark);
+}
+
+/* ==========================================================================
+ Typography
+========================================================================== */
+
+html {
+	--font-primary: 'Open Sans', sans-serif;
+	--font-secondary: 'Coiny', cursive;
+
+	--ratio: 1.5;
+
+	--size-one: calc(var(--size-two) * var(--ratio));
+	--size-two: calc(var(--size-three) * var(--ratio));
+	--size-three: calc(1rem * var(--ratio));
+
+
+	font-family: var(--font-primary);
+	line-height: 1.4;
+
+}
+
+main {
+	margin: auto;
+	max-width: 45rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.2;
+	margin: 1.5em auto .25em;
+}
+
+h1, h2 {
+	font-family: var(--font-secondary);
+	font-weight: normal;
+}
+
+h1 {
+	font-size: var(--size-one);
+}
+
+h2 {
+	font-size: var(--size-two);
+}
+
+h3 {
+	font-size: var(--size-three);
+	font-weight: 700;
+}
+
+
+
+figure {
+	margin: auto 0;
+}
+
+p {
+	margin-top: 0;
+}
+
+li {
+	list-style-type: none;
+}
+
+
+a {
+	color: var(--color-red);
+	text-decoration: none;
+}
+
+a:active {
+	color: var(--color-gold);
+}
+
+a:hover, a:focus {
+	text-decoration: underline;
+	outline: none;
+}
+
+a:visited {
+	color: var(--color-red-dark);
+}
+
+.font-descriptor {
+	font-size: .75rem;
+	text-transform: uppercase;
+	color: var(--color-gray);
+	margin-top: 1.5rem;
+}
+
+
+
+.primary-font {
+	font-family: var(--font-primary);
+	font-size: var(--size-three);
+}
+
+.secondary-font {
+	font-family: var(--font-secondary);
+	font-size: var(--size-three);
+}
+
+.hero-headline {
+	font-family: var(--font-secondary);
+	font-size: var(--size-one);
+}
+
+.first-headline {
+	font-family: var(--font-secondary);
+	font-size: var(--size-two);
+}
+
+.second-headline {
+	font-size: var(--size-three);
+	font-weight: 700;
+}
+
+
+.highlighted-body {
+	font-weight: 700;
+}
+
+
+
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Coiny', cursive;
+
+
+
+/* ==========================================================================
+ Header Component
+========================================================================== */
+
+header {
+	background-color: var(--color-brown);
+	color: var(--color-beige);
+	padding: 2rem;
+}
+
+header li {
+	display: inline-block;
+}
+
+header a {
+	background-color: var(--color-red);
+	border-radius: .9rem;
+	color: var(--color-beige);
+	font-weight: 700;
+	padding: .5rem 1rem;
+}
+
+header a:hover, header a:focus{
+	background-color: var(--color-blue);
+	color: var(--color-brown);
+	text-decoration: none;
+}
+
+header a:active {
+	background-color: var(--color-gold);
+}
+
+header a:visited {
+	background-color: var(--color-red-dark);
+	color: var(--color-beige);
+}
+
+/* ==========================================================================
+ Footer Component
+========================================================================== */
+
+footer {
+	background-color: var(--color-brown);
+	color: var(--color-beige);
+	padding: 2rem;
+}
